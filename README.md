@@ -1,5 +1,6 @@
 # track-carrier-openroaming-support
- Tracks Openroaming Support Using NAPTR Lookups for every PLMNID
+ Tracks OpenRoaming Support Using NAPTR Lookups for every PLMNID
+ Updates automatically every week.
 
 
 <!-- Tables Start -->
