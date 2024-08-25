@@ -2,7 +2,7 @@ name: Run Scripts and Update README
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs every week
+    - cron: '0 0 0 * *'  # Runs every week
   workflow_dispatch:  # Allows manual triggering of the workflow
 
 jobs:
