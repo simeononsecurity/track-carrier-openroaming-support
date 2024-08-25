@@ -1,0 +1,4 @@
+dnspython==2.4.2
+tqdm==4.66.1
+mccmnc==3.3
+tabulate
