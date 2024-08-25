@@ -71,8 +71,8 @@ def naptr_lookup(realm, resolver):
             if b'aaa+auth:radius.tls.tcp' in rdata.service.lower():
                 return rdata.replacement.to_text().strip('.')
         print(f"No valid NAPTR record found for {realm}")
-    #except Exception as e:
-        #print(f"Error during NAPTR lookup for {realm}: {e}")
+    except Exception as e:
+        print(f"Error during NAPTR lookup for {realm}: {e}")
     return None
 
 def srv_lookup(host, resolver):
