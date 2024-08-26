@@ -11,11 +11,11 @@
 | OpenRoaming Unsupported | 99.80%       |
 
 ## Supported Carriers
-| Network          | Country                  |   MCC |   MNC |
-|------------------|--------------------------|-------|-------|
-| Swisscom         | Switzerland              |   228 |    01 |
-| AT&T Mobility    | United States of America |   310 |   150 |
-| Verizon Wireless | United States of America |   310 |   280 |
-| AT&T Mobility    | United States of America |   310 |   410 |
-| Limitless        | United States of America |   310 |   690 |
+| Network          | Country                  |   MCC |   MNC | Host              |   Port |
+|------------------|--------------------------|-------|-------|-------------------|--------|
+| Swisscom         | Switzerland              |   228 |    01 | test.idp.pwlan.ch |   2083 |
+| AT&T Mobility    | United States of America |   310 |   150 | idp.3af521.net    |   2083 |
+| Verizon Wireless | United States of America |   310 |   280 | idp.3af521.net    |   2083 |
+| AT&T Mobility    | United States of America |   310 |   410 | idp.3af521.net    |   2083 |
+| Limitless        | United States of America |   310 |   690 | idp.3af521.net    |   2083 |
 <!-- Tables End -->

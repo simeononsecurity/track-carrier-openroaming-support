@@ -20,7 +20,7 @@ for plmnid, details in data.items():
     total_count += 1
     if details.get('lookup_success'):
         supported_count += 1
-        supported_list.append([details['NETWORK'], details['COUNTRY'], details['MCC'], details['MNC']])
+        supported_list.append([details['NETWORK'], details['COUNTRY'], details['MCC'], details['MNC'], details['host'], details['port']])
     else:
         unsupported_count += 1
 
@@ -38,7 +38,7 @@ supported_table = supported_list
 
 # Generate markdown tables using tabulate
 support_table_md = tabulate(support_table, headers=["Status", "Percentage"], tablefmt="github")
-supported_table_md = tabulate(supported_table, headers=["Network", "Country", "MCC", "MNC"], tablefmt="github")
+supported_table_md = tabulate(supported_table, headers=["Network", "Country", "MCC", "MNC", "Host", "Port" ], tablefmt="github")
 
 # Read the README file
 with open(readme_file_path, 'r') as file:
