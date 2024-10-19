@@ -36,7 +36,10 @@ def naptr_lookup(domain, resolver):
         for rdata in answers:
             print(f"Found NAPTR record: {rdata}")
             if b'aaa+auth:radius.tls.tcp' in rdata.service.lower():
-                return rdata.replacement.to_text().strip('.')
+                replacement = rdata.replacement.to_text().strip('.')
+                # Strip the '_radiustls._tcp.' part from the replacement host
+                replacement = replacement.replace('_radiustls._tcp.', '')
+                return replacement
         print(f"No valid NAPTR record found for {domain}")
     except Exception as e:
         print(f"Error during NAPTR lookup for {domain}: {e}")
