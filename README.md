@@ -1,7 +1,10 @@
 # track-carrier-openroaming-support
- Tracks OpenRoaming Support Using NAPTR Lookups for every PLMNID
- Updates automatically every week.
 
+Tracks OpenRoaming Support Using NAPTR and SRV Lookups for every PLMNID listed on [mcc-mnc.com](https://www.mcc-mnc.com/)
+
+Automatically updates every week using github actions.
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-Click%20Here-ff69b4)](https://github.com/sponsors/simeononsecurity)
 
 <!-- Tables Start -->
 ## OpenRoaming Support Status
