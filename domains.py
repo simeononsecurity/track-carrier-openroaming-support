@@ -43,10 +43,32 @@ def naptr_lookup(realm, resolver):
         print(f"Error during NAPTR lookup for {realm}: {e}")
     return None
 
+def srv_lookup(host, resolver):
+    """
+    Perform SRV DNS lookup on the given host using a specified resolver.
+
+    Args:
+        host (str): The hostname to perform the SRV lookup on.
+        resolver (dns.resolver.Resolver): The DNS resolver to use for the lookup.
+
+    Returns:
+        tuple: A tuple containing the target host and port if found, otherwise (None, None).
+    """
+    try:
+        print(f"Performing SRV lookup for {host} using resolver {resolver.nameservers[0]}")
+        answers = resolver.resolve(host, 'SRV', lifetime=5)
+        for rdata in sorted(answers, key=lambda r: r.priority):
+            print(f"Found SRV record: {rdata}")
+            return rdata.target.to_text().strip('.'), rdata.port
+        print(f"No valid SRV record found for {host}")
+    except Exception as e:
+        print(f"Error during SRV lookup for {host}: {e}")
+    return None, None
+
 def create_json_dict_for_domains(domains, resolvers, fallback_records):
     """
-    Perform NAPTR lookups for given domains and create a JSON dictionary for them.
-    If no NAPTR record is found, use fallback records if available.
+    Perform NAPTR and SRV lookups for given domains and create a JSON dictionary for them.
+    If no NAPTR or SRV record is found, use fallback records if available.
 
     Args:
         domains (list): List of domains to perform lookups for.
@@ -67,19 +89,21 @@ def create_json_dict_for_domains(domains, resolvers, fallback_records):
             for resolver in resolvers:
                 srv_host = naptr_lookup(domain, resolver)
                 if srv_host:
-                    srv_port = 2083  # Default port for radius.tls.tcp
-                    break
+                    # Try SRV lookup after NAPTR if a host is found
+                    srv_host, srv_port = srv_lookup(srv_host, resolver)
+                    if srv_host and srv_port:
+                        break
                 # Introduce a short delay between queries to avoid rate limiting
                 time.sleep(0.2)
 
-            if srv_host:
+            if srv_host and srv_port:
                 domain_results[domain] = {"host": srv_host, "port": srv_port}
             elif domain in fallback_records:
                 domain_results[domain] = {"host": fallback_records[domain]["host"], "port": fallback_records[domain]["port"]}
                 print(f"Using fallback record for {domain}: {fallback_records[domain]}")
             else:
-                domain_results[domain] = {"host": None, "port": None, "note": "No NAPTR record found and no fallback available"}
-                print(f"No NAPTR record or fallback available for {domain}")
+                domain_results[domain] = {"host": None, "port": None, "note": "No NAPTR or SRV record found and no fallback available"}
+                print(f"No NAPTR or SRV record or fallback available for {domain}")
 
             # Update progress bar
             pbar.update(1)
