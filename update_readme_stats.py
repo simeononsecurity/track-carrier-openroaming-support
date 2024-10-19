@@ -67,7 +67,10 @@ for domain, details in domain_lookup_data.items():
             # If host is a single value, just add it as usual
             domain_results_list.append([domain, host, port])
 
-# Generate markdown table for domain lookup results
+# Sort the domain_results_list alphabetically by the 'Domain' column (first column)
+domain_results_list.sort(key=lambda x: x[0])
+
+# Generate markdown table for domain lookup results after sorting
 domain_lookup_md = tabulate(domain_results_list, headers=["Domain", "Host", "Port"], tablefmt="github")
 
 # Read the README file
