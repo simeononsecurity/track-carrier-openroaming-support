@@ -1,11 +1,13 @@
 import json
+import os
 from tabulate import tabulate
 
 # Paths to the JSON data and README file
 json_file_path = 'data/mccmnc.json'
+domain_lookup_json_path = 'data/domain_lookup_results.json'  # New JSON file for domains lookup results
 readme_file_path = 'README.md'
 
-# Load data from the JSON file
+# Load data from the mccmnc.json file
 with open(json_file_path, 'r') as file:
     data = json.load(file)
 
@@ -40,6 +42,24 @@ supported_table = supported_list
 support_table_md = tabulate(support_table, headers=["Status", "Percentage"], tablefmt="github")
 supported_table_md = tabulate(supported_table, headers=["Network", "Country", "MCC", "MNC", "Host", "Port" ], tablefmt="github")
 
+# Load data from the domain_lookup_results.json file (New section)
+current_dir = os.path.dirname(os.path.abspath(__file__))  # Get current directory path
+domain_lookup_json_path = os.path.join(current_dir, 'data', 'domain_lookup_results.json')
+
+# Load domain lookup data
+with open(domain_lookup_json_path, 'r') as domain_file:
+    domain_lookup_data = json.load(domain_file)
+
+# Process the domain lookup data to create a table
+domain_results_list = []
+for domain, details in domain_lookup_data.items():
+    host = details.get('host', 'N/A')
+    port = details.get('port', 'N/A')
+    domain_results_list.append([domain, host, port])
+
+# Generate markdown table for domain lookup results
+domain_lookup_md = tabulate(domain_results_list, headers=["Domain", "Host", "Port"], tablefmt="github")
+
 # Read the README file
 with open(readme_file_path, 'r') as file:
     readme_content = file.read()
@@ -51,6 +71,9 @@ tables_section = f"""
 
 ## Supported Carriers
 {supported_table_md}
+
+## Domain Lookup Results
+{domain_lookup_md}
 """
 
 # Replace the content between the comments
@@ -62,4 +85,4 @@ updated_content = readme_content.split(start_marker)[0] + start_marker + tables_
 with open(readme_file_path, 'w') as file:
     file.write(updated_content)
 
-print("README.md has been updated with the latest OpenRoaming support tables.")
+print("README.md has been updated with the latest OpenRoaming support tables and domain lookup results.")
