@@ -77,14 +77,19 @@ with open(readme_file_path, 'r') as file:
 # Prepare the updated content with tables
 tables_section = f"""
 ## OpenRoaming Support Status
+
 {support_table_md}
 
 ## Supported Carriers
+
 {supported_table_md}
+
 > Note 310:280 is also AT&T, the used data set is wrong on that one.
 
 ## Realm Lookup Results
-> A few realms we've identified from public certificates, public documentation, and authentication attempts.
+
+A few realms we've identified from public certificates, public documentation, and authentication attempts.
+
 {domain_lookup_md}
 """
 
