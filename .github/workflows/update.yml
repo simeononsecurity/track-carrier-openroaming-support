@@ -26,9 +26,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # - name: Run main.py
-      #   run: python main.py
-      #   continue-on-error: true
+      - name: Run main.py
+        run: python main.py
+        continue-on-error: true
 
       - name: Run domains.py
         run: python domains.py
