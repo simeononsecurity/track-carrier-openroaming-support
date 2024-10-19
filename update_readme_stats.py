@@ -50,7 +50,8 @@ domain_lookup_json_path = os.path.join(current_dir, 'data', 'domain_lookup_resul
 with open(domain_lookup_json_path, 'r') as domain_file:
     domain_lookup_data = json.load(domain_file)
 
-# Process the domain lookup data to create a table, excluding domains with null host or port
+# Process the domain lookup data to create a table, excluding domains with null host or port,
+# and duplicating rows if host contains multiple entries.
 domain_results_list = []
 for domain, details in domain_lookup_data.items():
     host = details.get('host')
@@ -58,7 +59,13 @@ for domain, details in domain_lookup_data.items():
 
     # Only add domains to the list if host and port are not None
     if host and port:
-        domain_results_list.append([domain, host, port])
+        # If host is a list, create a row for each host entry
+        if isinstance(host, list):
+            for individual_host in host:
+                domain_results_list.append([domain, individual_host, port])
+        else:
+            # If host is a single value, just add it as usual
+            domain_results_list.append([domain, host, port])
 
 # Generate markdown table for domain lookup results
 domain_lookup_md = tabulate(domain_results_list, headers=["Domain", "Host", "Port"], tablefmt="github")
@@ -74,8 +81,10 @@ tables_section = f"""
 
 ## Supported Carriers
 {supported_table_md}
+> Note 310:280 is also AT&T, the used data set is wrong on that one.
 
-## Domain Lookup Results
+## Realm Lookup Results
+> A few realms we've identified from public certificates and authentication attempts. 
 {domain_lookup_md}
 """
 
