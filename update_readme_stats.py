@@ -84,7 +84,7 @@ tables_section = f"""
 > Note 310:280 is also AT&T, the used data set is wrong on that one.
 
 ## Realm Lookup Results
-> A few realms we've identified from public certificates and authentication attempts. 
+> A few realms we've identified from public certificates, public documentation, and authentication attempts.
 {domain_lookup_md}
 """
 
