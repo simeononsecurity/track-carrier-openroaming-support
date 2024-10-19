@@ -18,10 +18,13 @@
 | Verizon Wireless | United States of America |   310 |   280 | idp.3af521.net    |   2083 |
 | AT&T Mobility    | United States of America |   310 |   410 | idp.3af521.net    |   2083 |
 | Limitless        | United States of America |   310 |   690 | idp.3af521.net    |   2083 |
+
 > Note 310:280 is also AT&T, the used data set is wrong on that one.
 
 ## Realm Lookup Results
-> A few realms we've identified from public certificates, public documentation, and authentication attempts.
+
+A few realms we've identified from public certificates, public documentation, and authentication attempts.
+
 | Domain                             | Host                      |   Port |
 |------------------------------------|---------------------------|--------|
 | wlan.mnc260.mcc310.3gppnetwork.org | aaa.geo.t-mobile.com      |   2083 |
@@ -51,4 +54,3 @@
 | delhaize.openroaming.net           | delhaize.openroaming.net  |   2083 |
 | w-jp1.wi2.cityroam.jp              | jpgw.cityroam.jp          |   2083 |
 <!-- Tables End -->
-> Note 310:280 is also AT&T, the used data set is wrong on that one.
