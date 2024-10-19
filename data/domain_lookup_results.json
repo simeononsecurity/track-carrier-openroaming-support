@@ -20,11 +20,11 @@
         "port": 2083
     },
     "samsung.openroaming.net": {
-        "host": "samsung.openroaming.net",
+        "host": "_radiustls._tcp.samsung.openroaming.net",
         "port": 2083
     },
     "openroaming.goog": {
-        "host": "openroaming.goog",
+        "host": "_radiustls._tcp.openroaming.goog",
         "port": 2083
     },
     "spectrum.net": {
@@ -38,11 +38,11 @@
         "note": "No NAPTR record found and no fallback available"
     },
     "prod.premnet.wefi.com": {
-        "host": "prod.premnet.wefi.com",
+        "host": "_radiustls._tcp.prod.premnet.wefi.com",
         "port": 2083
     },
     "globalro.am": {
-        "host": "openroaming.globalro.am",
+        "host": "_radiustls._tcp.openroaming.globalro.am",
         "port": 2083
     },
     "dummy.openroaming.wefi.com": {
@@ -51,7 +51,7 @@
         "note": "No NAPTR record found and no fallback available"
     },
     "prod.openroaming.wefi.com": {
-        "host": "prod.openroaming.wefi.com",
+        "host": "_radiustls._tcp.prod.openroaming.wefi.com",
         "port": 2083
     },
     "charter.net": {
@@ -65,7 +65,7 @@
         "note": "No NAPTR record found and no fallback available"
     },
     "aka.xfinitymobile.com": {
-        "host": "3af521.net",
+        "host": "_radiustls._tcp.3af521.net",
         "port": 2083
     },
     "rr.com": {
@@ -74,28 +74,23 @@
         "note": "No NAPTR record found and no fallback available"
     },
     "wba.3af521.net": {
-        "host": "3af521.net",
+        "host": "_radiustls._tcp.3af521.net",
         "port": 2083
     },
     "sdk.openroaming.net": {
-        "host": "sdk.openroaming.net",
+        "host": "_radiustls._tcp.sdk.openroaming.net",
         "port": 2083
     },
-    "c2k2q8e2pcs2udar1pa0.orion.area120.com": {
-        "host": null,
-        "port": null,
-        "note": "No NAPTR record found and no fallback available"
-    },
     "xfinitymobile.com": {
-        "host": "3af521.net",
+        "host": "_radiustls._tcp.3af521.net",
         "port": 2083
     },
     "w-jp2.wi2.cityroam.jp": {
-        "host": "jpgw.cityroam.jp",
+        "host": "_radiustls._tcp.jpgw.cityroam.jp",
         "port": 2083
     },
     "openroaming.securewifi.io": {
-        "host": "securewifi.io",
+        "host": "_radiustls._tcp.securewifi.io",
         "port": 2083
     },
     "yahoo.com": {
@@ -104,15 +99,15 @@
         "note": "No NAPTR record found and no fallback available"
     },
     "profile.guglielmo.biz": {
-        "host": "openroaming.guglielmo.biz",
+        "host": "_radiustls._tcp.openroaming.guglielmo.biz",
         "port": 2083
     },
     "ciscoid.openroaming.net": {
-        "host": "ciscoid.openroaming.net",
+        "host": "_radiustls._tcp.ciscoid.openroaming.net",
         "port": 2083
     },
     "test.orportal.org": {
-        "host": "orportal.org",
+        "host": "_radiustls._tcp.orportal.org",
         "port": 2083
     },
     "icloud.com": {
@@ -126,7 +121,7 @@
         "note": "No NAPTR record found and no fallback available"
     },
     "apple.openroaming.net": {
-        "host": "apple.openroaming.net",
+        "host": "_radiustls._tcp.apple.openroaming.net",
         "port": 2083
     },
     "umich.edu": {
@@ -134,13 +129,8 @@
         "port": null,
         "note": "No NAPTR record found and no fallback available"
     },
-    "c1np0kb17dk2elvk96a0.orion.area120.com": {
-        "host": null,
-        "port": null,
-        "note": "No NAPTR record found and no fallback available"
-    },
     "google.openroaming.net": {
-        "host": "google.openroaming.net",
+        "host": "_radiustls._tcp.google.openroaming.net",
         "port": 2083
     },
     "wisc.edu": {
@@ -149,7 +139,7 @@
         "note": "No NAPTR record found and no fallback available"
     },
     "clus.openroaming.net": {
-        "host": "clus.openroaming.net",
+        "host": "_radiustls._tcp.clus.openroaming.net",
         "port": 2083
     },
     "hotmail.com": {
@@ -163,7 +153,7 @@
         "note": "No NAPTR record found and no fallback available"
     },
     "tokyo.wi2.cityroam.jp": {
-        "host": "jpgw.cityroam.jp",
+        "host": "_radiustls._tcp.jpgw.cityroam.jp",
         "port": 2083
     },
     "kwikboost.com": {
@@ -207,7 +197,7 @@
         "note": "No NAPTR record found and no fallback available"
     },
     "delhaize.openroaming.net": {
-        "host": "delhaize.openroaming.net",
+        "host": "_radiustls._tcp.delhaize.openroaming.net",
         "port": 2083
     },
     "xfinity.com": {
@@ -216,7 +206,7 @@
         "note": "No NAPTR record found and no fallback available"
     },
     "w-jp1.wi2.cityroam.jp": {
-        "host": "jpgw.cityroam.jp",
+        "host": "_radiustls._tcp.jpgw.cityroam.jp",
         "port": 2083
     }
 }
