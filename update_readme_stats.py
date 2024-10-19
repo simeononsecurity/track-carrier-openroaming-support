@@ -40,7 +40,7 @@ supported_table = supported_list
 
 # Generate markdown tables using tabulate
 support_table_md = tabulate(support_table, headers=["Status", "Percentage"], tablefmt="github")
-supported_table_md = tabulate(supported_table, headers=["Network", "Country", "MCC", "MNC", "Host", "Port" ], tablefmt="github")
+supported_table_md = tabulate(supported_table, headers=["Network", "Country", "MCC", "MNC", "Host", "Port"], tablefmt="github")
 
 # Load data from the domain_lookup_results.json file (New section)
 current_dir = os.path.dirname(os.path.abspath(__file__))  # Get current directory path
@@ -50,12 +50,15 @@ domain_lookup_json_path = os.path.join(current_dir, 'data', 'domain_lookup_resul
 with open(domain_lookup_json_path, 'r') as domain_file:
     domain_lookup_data = json.load(domain_file)
 
-# Process the domain lookup data to create a table
+# Process the domain lookup data to create a table, excluding domains with null host or port
 domain_results_list = []
 for domain, details in domain_lookup_data.items():
-    host = details.get('host', 'N/A')
-    port = details.get('port', 'N/A')
-    domain_results_list.append([domain, host, port])
+    host = details.get('host')
+    port = details.get('port')
+
+    # Only add domains to the list if host and port are not None
+    if host and port:
+        domain_results_list.append([domain, host, port])
 
 # Generate markdown table for domain lookup results
 domain_lookup_md = tabulate(domain_results_list, headers=["Domain", "Host", "Port"], tablefmt="github")
