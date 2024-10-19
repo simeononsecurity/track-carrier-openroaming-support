@@ -30,6 +30,10 @@ jobs:
         run: python main.py
         continue-on-error: true
 
+      - name: Run domains.py
+        run: python domains.py
+        continue-on-error: true
+
       - name: Run update_readme_stats.py
         run: python update_readme_stats.py
         continue-on-error: true
