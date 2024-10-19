@@ -129,7 +129,7 @@ def main():
 
     # Save results to a JSON file
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    json_path = os.path.join(current_dir, 'domain_lookup_results.json')
+    json_path = os.path.join(current_dir, 'data', 'domain_lookup_results.json')
     save_json_file(domain_results, json_path)
 
 if __name__ == "__main__":
