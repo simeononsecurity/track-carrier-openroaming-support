@@ -19,30 +19,28 @@ def setup_resolvers():
         resolver_list.append(resolver)
     return resolver_list
 
-def naptr_lookup(domain, resolver):
+def naptr_lookup(realm, resolver):
     """
-    Perform NAPTR DNS lookup on the given domain using a specified resolver.
+    Perform NAPTR DNS lookup on the given realm using a specified resolver.
 
     Args:
-        domain (str): The domain to perform the NAPTR lookup on.
+        realm (str): The realm to perform the NAPTR lookup on.
         resolver (dns.resolver.Resolver): The DNS resolver to use for the lookup.
 
     Returns:
         str: Replacement value from the NAPTR record if found, otherwise None.
     """
     try:
-        print(f"Performing NAPTR lookup for {domain} using resolver {resolver.nameservers[0]}")
-        answers = resolver.resolve(domain, 'NAPTR', lifetime=5)
+        print(f"Performing NAPTR lookup for {realm} using resolver {resolver.nameservers[0]}")
+        answers = resolver.resolve(realm, 'NAPTR', lifetime=5)
         for rdata in answers:
             print(f"Found NAPTR record: {rdata}")
+            # Use bytes literal for comparison
             if b'aaa+auth:radius.tls.tcp' in rdata.service.lower():
-                replacement = rdata.replacement.to_text().strip('.')
-                # Strip the '_radiustls._tcp.' part from the replacement host
-                replacement = replacement.replace('_radiustls._tcp.', '')
-                return replacement
-        print(f"No valid NAPTR record found for {domain}")
+                return rdata.replacement.to_text().strip('.')
+        print(f"No valid NAPTR record found for {realm}")
     except Exception as e:
-        print(f"Error during NAPTR lookup for {domain}: {e}")
+        print(f"Error during NAPTR lookup for {realm}: {e}")
     return None
 
 def create_json_dict_for_domains(domains, resolvers, fallback_records):
