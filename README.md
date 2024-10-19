@@ -27,32 +27,32 @@
 
 A few realms we've identified from public certificates, public documentation, and authentication attempts.
 
-| Domain                             | Host                                      |   Port |
-|------------------------------------|-------------------------------------------|--------|
-| wlan.mnc260.mcc310.3gppnetwork.org | aaa.geo.t-mobile.com                      |   2083 |
-| wlan.mnc240.mcc310.3gppnetwork.org | aaa.geo.t-mobile.com                      |   2083 |
-| wlan.mnc310.mcc310.3gppnetwork.org | aaa.geo.t-mobile.com                      |   2083 |
-| wlan.mnc314.mcc330.3gppnetwork.org | 52.37.147.195                             |   2083 |
-| wlan.mnc314.mcc330.3gppnetwork.org | 44.229.62.214                             |   2083 |
-| wlan.mnc314.mcc330.3gppnetwork.org | 44.241.107.197                            |   2083 |
-| samsung.openroaming.net            | _radiustls._tcp.samsung.openroaming.net   |   2083 |
-| openroaming.goog                   | _radiustls._tcp.openroaming.goog          |   2083 |
-| prod.premnet.wefi.com              | _radiustls._tcp.prod.premnet.wefi.com     |   2083 |
-| globalro.am                        | _radiustls._tcp.openroaming.globalro.am   |   2083 |
-| prod.openroaming.wefi.com          | _radiustls._tcp.prod.openroaming.wefi.com |   2083 |
-| aka.xfinitymobile.com              | _radiustls._tcp.3af521.net                |   2083 |
-| wba.3af521.net                     | _radiustls._tcp.3af521.net                |   2083 |
-| sdk.openroaming.net                | _radiustls._tcp.sdk.openroaming.net       |   2083 |
-| xfinitymobile.com                  | _radiustls._tcp.3af521.net                |   2083 |
-| w-jp2.wi2.cityroam.jp              | _radiustls._tcp.jpgw.cityroam.jp          |   2083 |
-| openroaming.securewifi.io          | _radiustls._tcp.securewifi.io             |   2083 |
-| profile.guglielmo.biz              | _radiustls._tcp.openroaming.guglielmo.biz |   2083 |
-| ciscoid.openroaming.net            | _radiustls._tcp.ciscoid.openroaming.net   |   2083 |
-| test.orportal.org                  | _radiustls._tcp.orportal.org              |   2083 |
-| apple.openroaming.net              | _radiustls._tcp.apple.openroaming.net     |   2083 |
-| google.openroaming.net             | _radiustls._tcp.google.openroaming.net    |   2083 |
-| clus.openroaming.net               | _radiustls._tcp.clus.openroaming.net      |   2083 |
-| tokyo.wi2.cityroam.jp              | _radiustls._tcp.jpgw.cityroam.jp          |   2083 |
-| delhaize.openroaming.net           | _radiustls._tcp.delhaize.openroaming.net  |   2083 |
-| w-jp1.wi2.cityroam.jp              | _radiustls._tcp.jpgw.cityroam.jp          |   2083 |
+| Domain                             | Host                      |   Port |
+|------------------------------------|---------------------------|--------|
+| wlan.mnc260.mcc310.3gppnetwork.org | aaa.geo.t-mobile.com      |   2083 |
+| wlan.mnc240.mcc310.3gppnetwork.org | aaa.geo.t-mobile.com      |   2083 |
+| wlan.mnc310.mcc310.3gppnetwork.org | aaa.geo.t-mobile.com      |   2083 |
+| wlan.mnc314.mcc330.3gppnetwork.org | 52.37.147.195             |   2083 |
+| wlan.mnc314.mcc330.3gppnetwork.org | 44.229.62.214             |   2083 |
+| wlan.mnc314.mcc330.3gppnetwork.org | 44.241.107.197            |   2083 |
+| samsung.openroaming.net            | idp.openroaming.net       |   2083 |
+| openroaming.goog                   | radsec.openroaming.goog   |   2083 |
+| prod.premnet.wefi.com              | prod.premnet.wefi.com     |   2083 |
+| globalro.am                        | radsec.globalro.am        |   2083 |
+| prod.openroaming.wefi.com          | prod.openroaming.wefi.com |   2083 |
+| aka.xfinitymobile.com              | idp.3af521.net            |   2083 |
+| wba.3af521.net                     | idp.3af521.net            |   2083 |
+| sdk.openroaming.net                | idp.openroaming.net       |   2083 |
+| xfinitymobile.com                  | idp.3af521.net            |   2083 |
+| w-jp2.wi2.cityroam.jp              | jpgw2.cityroam.jp         |   2083 |
+| openroaming.securewifi.io          | idp.securewifi.io         |  20830 |
+| profile.guglielmo.biz              | openroaming.guglielmo.biz |   2083 |
+| ciscoid.openroaming.net            | idp.openroaming.net       |   2083 |
+| test.orportal.org                  | test.orportal.org         |   2083 |
+| apple.openroaming.net              | idp.openroaming.net       |   2083 |
+| google.openroaming.net             | idp.openroaming.net       |   2083 |
+| clus.openroaming.net               | idp.openroaming.net       |   2083 |
+| tokyo.wi2.cityroam.jp              | jpgw2.cityroam.jp         |   2083 |
+| delhaize.openroaming.net           | idpeu.openroaming.net     |   2083 |
+| w-jp1.wi2.cityroam.jp              | jpgw2.cityroam.jp         |   2083 |
 <!-- Tables End -->
