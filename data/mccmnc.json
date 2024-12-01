@@ -7091,9 +7091,7 @@
         "MCC": "310",
         "MNC": "150",
         "NETWORK": "AT&T Mobility",
-        "lookup_success": true,
-        "host": "idp.3af521.net",
-        "port": 2083
+        "lookup_success": false
     },
     "310160": {
         "CC": "1",

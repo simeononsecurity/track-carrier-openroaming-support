@@ -11,15 +11,14 @@ Automatically updates every week using github actions.
 
 | Status                  | Percentage   |
 |-------------------------|--------------|
-| OpenRoaming Supported   | 0.20%        |
-| OpenRoaming Unsupported | 99.80%       |
+| OpenRoaming Supported   | 0.16%        |
+| OpenRoaming Unsupported | 99.84%       |
 
 ## Supported Carriers
 
 | Network          | Country                  |   MCC |   MNC | Host              |   Port |
 |------------------|--------------------------|-------|-------|-------------------|--------|
 | Swisscom         | Switzerland              |   228 |    01 | test.idp.pwlan.ch |   2083 |
-| AT&T Mobility    | United States of America |   310 |   150 | idp.3af521.net    |   2083 |
 | Verizon Wireless | United States of America |   310 |   280 | idp.3af521.net    |   2083 |
 | AT&T Mobility    | United States of America |   310 |   410 | idp.3af521.net    |   2083 |
 | Limitless        | United States of America |   310 |   690 | idp.3af521.net    |   2083 |
