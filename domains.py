@@ -173,7 +173,8 @@ def main():
         "w-jp1.wi2.cityroam.jp",
         "wayru.io",
         "jwa.bemap.cityroam.jp",
-        "or1.guglielmo.biz"
+        "or1.guglielmo.biz",
+        "wayfiwireless.com",
     ]
 
     # Fallback records for domains without NAPTR
