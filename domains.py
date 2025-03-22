@@ -175,6 +175,9 @@ def main():
         "jwa.bemap.cityroam.jp",
         "or1.guglielmo.biz",
         "wayfiwireless.com",
+        "dogwood120.net",
+        "orionwifi.com",
+        "orion.area120.com"
     ]
 
     # Fallback records for domains without NAPTR
