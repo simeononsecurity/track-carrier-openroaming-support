@@ -12,7 +12,7 @@ def setup_resolvers():
         list: List of configured DNS resolvers.
     """
     resolver_list = []
-    dns_servers = ['1.1.1.1', '8.8.8.8', '9.9.9.9']
+    dns_servers = ['1.1.1.1', '8.8.8.8', '9.9.9.9', "208.67.222.222", "8.26.56.26", "76.76.2.0", "76.76.19.19"]
     for server in dns_servers:
         resolver = dns.resolver.Resolver()
         resolver.nameservers = [server]
@@ -94,7 +94,7 @@ def create_json_dict_for_domains(domains, resolvers, fallback_records):
                     if srv_host and srv_port:
                         break
                 # Introduce a short delay between queries to avoid rate limiting
-                time.sleep(0.2)
+                time.sleep(0.1)
 
             if srv_host and srv_port:
                 domain_results[domain] = {"host": srv_host, "port": srv_port}
