@@ -183,7 +183,7 @@ def main():
         "wlan.mnc240.mcc310.3gppnetwork.org": {"host": "aaa.geo.t-mobile.com", "port": 2083},
         "wlan.mnc310.mcc310.3gppnetwork.org": {"host": "aaa.geo.t-mobile.com", "port": 2083},
         "wlan.mnc314.mcc330.3gppnetwork.org": {"host": ["52.37.147.195", "44.229.62.214", "44.241.107.197"], "port": 2083},
-        "freedomfi.com": {"host": ["52.37.147.195", "44.229.62.214", "44.241.107.197"], "port": 2083}
+        "freedomfi.com": {"host": ["52.37.147.195", "44.229.62.214", "44.241.107.197"], "port": 2083},
         "hellohelium.com": {"host": ["52.37.147.195", "44.229.62.214", "44.241.107.197"], "port": 2083}
     }
 
