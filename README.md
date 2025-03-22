@@ -39,10 +39,12 @@ A few realms we've identified from public certificates, public documentation, an
 | delhaize.openroaming.net           | idpeu.openroaming.net     |   2083 |
 | globalro.am                        | radsec.globalro.am        |   2083 |
 | google.openroaming.net             | idp.openroaming.net       |   2083 |
+| ironwifi.net                       | openroaming1.ironwifi.net |   2083 |
 | jwa.bemap.cityroam.jp              | jpgw.cityroam.jp          |   2083 |
 | openroaming.goog                   | radsec.openroaming.goog   |   2083 |
 | openroaming.securewifi.io          | idp.securewifi.io         |  20830 |
 | or1.guglielmo.biz                  | or1.guglielmo.biz         |   2083 |
+| orion.area120.com                  | radsec.orion.area120.com  |   2083 |
 | prod.openroaming.wefi.com          | prod.openroaming.wefi.com |   2083 |
 | prod.premnet.wefi.com              | prod.premnet.wefi.com     |   2083 |
 | profile.guglielmo.biz              | openroaming.guglielmo.biz |   2083 |

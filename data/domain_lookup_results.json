@@ -224,5 +224,23 @@
     "wayfiwireless.com": {
         "host": "idp.wayfiwireless.com",
         "port": 2083
+    },
+    "dogwood120.net": {
+        "host": null,
+        "port": null,
+        "note": "No NAPTR or SRV record found and no fallback available"
+    },
+    "orionwifi.com": {
+        "host": null,
+        "port": null,
+        "note": "No NAPTR or SRV record found and no fallback available"
+    },
+    "orion.area120.com": {
+        "host": "radsec.orion.area120.com",
+        "port": 2083
+    },
+    "ironwifi.net": {
+        "host": "openroaming1.ironwifi.net",
+        "port": 2083
     }
 }
