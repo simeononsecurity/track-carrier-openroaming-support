@@ -86,7 +86,7 @@
         "port": 2083
     },
     "w-jp2.wi2.cityroam.jp": {
-        "host": "jpgw2.cityroam.jp",
+        "host": "jpgw.cityroam.jp",
         "port": 2083
     },
     "openroaming.securewifi.io": {
@@ -153,7 +153,7 @@
         "note": "No NAPTR or SRV record found and no fallback available"
     },
     "tokyo.wi2.cityroam.jp": {
-        "host": "jpgw2.cityroam.jp",
+        "host": "jpgw.cityroam.jp",
         "port": 2083
     },
     "kwikboost.com": {
@@ -206,7 +206,23 @@
         "note": "No NAPTR or SRV record found and no fallback available"
     },
     "w-jp1.wi2.cityroam.jp": {
-        "host": "jpgw2.cityroam.jp",
+        "host": "jpgw.cityroam.jp",
+        "port": 2083
+    },
+    "wayru.io": {
+        "host": "radsec.wayru.io",
+        "port": 2083
+    },
+    "jwa.bemap.cityroam.jp": {
+        "host": "jpgw.cityroam.jp",
+        "port": 2083
+    },
+    "or1.guglielmo.biz": {
+        "host": "or1.guglielmo.biz",
+        "port": 2083
+    },
+    "wayfiwireless.com": {
+        "host": "idp.wayfiwireless.com",
         "port": 2083
     }
 }
