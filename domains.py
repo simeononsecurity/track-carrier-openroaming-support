@@ -177,7 +177,8 @@ def main():
         "wayfiwireless.com",
         "dogwood120.net",
         "orionwifi.com",
-        "orion.area120.com"
+        "orion.area120.com",
+        "ironwifi.net"
     ]
 
     # Fallback records for domains without NAPTR
