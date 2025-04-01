@@ -178,7 +178,8 @@ def main():
         "dogwood120.net",
         "orionwifi.com",
         "orion.area120.com",
-        "ironwifi.net"
+        "ironwifi.net",
+        "securewifi.purple.ai"
     ]
 
     # Fallback records for domains without NAPTR
