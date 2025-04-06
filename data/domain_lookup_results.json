@@ -242,5 +242,9 @@
     "ironwifi.net": {
         "host": "openroaming1.ironwifi.net",
         "port": 2083
+    },
+    "securewifi.purple.ai": {
+        "host": "rad1-secure.purple.ai",
+        "port": 2084
     }
 }
