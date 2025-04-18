@@ -6,6 +6,8 @@ Automatically updates every week using github actions.
 
 [![Sponsor](https://img.shields.io/badge/Sponsor-Click%20Here-ff69b4)](https://github.com/sponsors/simeononsecurity)
 
+The WBA also has a tool where you can check for these records manually [https://wballiance.com/OR/Tools/realm-check.html](https://wballiance.com/OR/Tools/realm-check.html)
+
 <!-- Tables Start -->
 ## OpenRoaming Support Status
 
