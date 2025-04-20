@@ -125,10 +125,11 @@ def save_json_file(data, json_path):
 def main():
     # List of domains to perform lookups for
     domains = [
-        "wlan.mnc260.mcc310.3gppnetwork.org",
-        "wlan.mnc240.mcc310.3gppnetwork.org",
-        "wlan.mnc310.mcc310.3gppnetwork.org",
-        "wlan.mnc314.mcc330.3gppnetwork.org",
+        "wlan.mnc260.mcc310.pub.3gppnetwork.org",
+        "wlan.mnc240.mcc310.pub.3gppnetwork.org",
+        "wlan.mnc310.mcc310.pub.3gppnetwork.org",
+        "wlan.mnc314.mcc330.pub.3gppnetwork.org",
+        "wlan.mnc460.mcc313.pub.3gppnetwork.org",
         "samsung.openroaming.net",
         "openroaming.goog",
         "spectrum.net",
