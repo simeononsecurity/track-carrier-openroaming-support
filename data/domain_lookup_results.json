@@ -1,22 +1,26 @@
 {
-    "wlan.mnc260.mcc310.3gppnetwork.org": {
-        "host": "aaa.geo.t-mobile.com",
-        "port": 2083
+    "wlan.mnc260.mcc310.pub.3gppnetwork.org": {
+        "host": null,
+        "port": null,
+        "note": "No NAPTR or SRV record found and no fallback available"
     },
-    "wlan.mnc240.mcc310.3gppnetwork.org": {
-        "host": "aaa.geo.t-mobile.com",
-        "port": 2083
+    "wlan.mnc240.mcc310.pub.3gppnetwork.org": {
+        "host": null,
+        "port": null,
+        "note": "No NAPTR or SRV record found and no fallback available"
     },
-    "wlan.mnc310.mcc310.3gppnetwork.org": {
-        "host": "aaa.geo.t-mobile.com",
-        "port": 2083
+    "wlan.mnc310.mcc310.pub.3gppnetwork.org": {
+        "host": null,
+        "port": null,
+        "note": "No NAPTR or SRV record found and no fallback available"
     },
-    "wlan.mnc314.mcc330.3gppnetwork.org": {
-        "host": [
-            "52.37.147.195",
-            "44.229.62.214",
-            "44.241.107.197"
-        ],
+    "wlan.mnc314.mcc330.pub.3gppnetwork.org": {
+        "host": null,
+        "port": null,
+        "note": "No NAPTR or SRV record found and no fallback available"
+    },
+    "wlan.mnc460.mcc313.pub.3gppnetwork.org": {
+        "host": "openroaming-proxy-1.mobi.com",
         "port": 2083
     },
     "samsung.openroaming.net": {
