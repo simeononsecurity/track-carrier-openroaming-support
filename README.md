@@ -41,7 +41,7 @@ A few realms we've identified from public certificates, public documentation, an
 | delhaize.openroaming.net               | idpeu.openroaming.net        |   2083 |
 | globalro.am                            | radsec.globalro.am           |   2083 |
 | google.openroaming.net                 | idp.openroaming.net          |   2083 |
-| ironwifi.net                           | openroaming1.ironwifi.net    |   2083 |
+| ironwifi.net                           | radsec.ironwifi.net          |   2084 |
 | jwa.bemap.cityroam.jp                  | jpgw.cityroam.jp             |   2083 |
 | openroaming.goog                       | radsec.openroaming.goog      |   2083 |
 | openroaming.securewifi.io              | idp.securewifi.io            |  20830 |
