@@ -10689,7 +10689,7 @@
         "ISO": "ms",
         "MCC": "354",
         "MNC": "299",
-        "NETWORK": "Failed Calls",
+        "NETWORK": "Digicel",
         "lookup_success": false
     },
     "354860": {
@@ -11382,7 +11382,7 @@
         "ISO": "kz",
         "MCC": "401",
         "MNC": "299",
-        "NETWORK": "Failed Calls",
+        "NETWORK": "Arna",
         "lookup_success": false
     },
     "40177": {
@@ -14383,12 +14383,12 @@
         "lookup_success": false
     },
     "425299": {
-        "CC": "970",
-        "COUNTRY": "Palestinian Territory",
-        "ISO": "ps",
+        "CC": "972",
+        "COUNTRY": "Israel",
+        "ISO": "il",
         "MCC": "425",
         "MNC": "299",
-        "NETWORK": "Failed Calls",
+        "NETWORK": "T2T",
         "lookup_success": false
     },
     "42577": {
@@ -14613,7 +14613,7 @@
         "ISO": "np",
         "MCC": "429",
         "MNC": "299",
-        "NETWORK": "Failed Calls",
+        "NETWORK": "CG Telecom",
         "lookup_success": false
     },
     "429999": {
@@ -17268,7 +17268,7 @@
         "ISO": "pg",
         "MCC": "537",
         "MNC": "299",
-        "NETWORK": "Failed Calls",
+        "NETWORK": "DIGIVOIP",
         "lookup_success": false
     },
     "537999": {
@@ -18753,7 +18753,7 @@
         "ISO": "gh",
         "MCC": "620",
         "MNC": "299",
-        "NETWORK": "Failed Calls",
+        "NETWORK": "Comsys",
         "lookup_success": false
     },
     "620999": {
@@ -19725,7 +19725,7 @@
         "ISO": "ke",
         "MCC": "639",
         "MNC": "299",
-        "NETWORK": "Failed Calls",
+        "NETWORK": "eferio",
         "lookup_success": false
     },
     "639999": {
@@ -20103,7 +20103,7 @@
         "ISO": "mg",
         "MCC": "646",
         "MNC": "299",
-        "NETWORK": "Failed Calls",
+        "NETWORK": "Bip",
         "lookup_success": false
     },
     "646999": {
@@ -20256,7 +20256,7 @@
         "ISO": "na",
         "MCC": "649",
         "MNC": "299",
-        "NETWORK": "Failed Calls",
+        "NETWORK": "Demshi",
         "lookup_success": false
     },
     "649999": {
@@ -20643,7 +20643,7 @@
         "ISO": "ss",
         "MCC": "659",
         "MNC": "299",
-        "NETWORK": "Failed Calls",
+        "NETWORK": "Digitel",
         "lookup_success": false
     },
     "659999": {
@@ -21111,7 +21111,7 @@
         "ISO": "pe",
         "MCC": "716",
         "MNC": "299",
-        "NETWORK": "Failed Calls",
+        "NETWORK": "Dolphin",
         "lookup_success": false
     },
     "71630": {
@@ -22357,12 +22357,12 @@
         "lookup_success": false
     },
     "901299": {
-        "CC": "870",
-        "COUNTRY": "Satellite Networks",
+        "CC": "882",
+        "COUNTRY": "International Networks",
         "ISO": "n/a",
         "MCC": "901",
         "MNC": "299",
-        "NETWORK": "Failed Calls",
+        "NETWORK": "Zain",
         "lookup_success": false
     },
     "90131": {
