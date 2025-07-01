@@ -180,7 +180,20 @@ def main():
         "orionwifi.com",
         "orion.area120.com",
         "ironwifi.net",
-        "securewifi.purple.ai"
+        "securewifi.purple.ai",
+        "cisco.com",
+        "com.firabarcelona.construmat",
+        "com.firabarcelona.iot",
+        "com.firabarcelona.smartcity",
+        "davidlloyd.openroaming.net",
+        "eu-sdk.openroaming.net",
+        "firabarcelona.padelsummit.com",
+        "firabarcelona.smartcity.com",
+        "idp.openroamingconnect.org",
+        "telcombas.com",
+        "tetrapi.pt",
+        "tonybox.net",
+        "web.de"
     ]
 
     # Fallback records for domains without NAPTR
