@@ -90,7 +90,7 @@
         "port": 2083
     },
     "w-jp2.wi2.cityroam.jp": {
-        "host": "jpgw.cityroam.jp",
+        "host": "jpgw4.cityroam.jp",
         "port": 2083
     },
     "openroaming.securewifi.io": {
@@ -157,7 +157,7 @@
         "note": "No NAPTR or SRV record found and no fallback available"
     },
     "tokyo.wi2.cityroam.jp": {
-        "host": "jpgw.cityroam.jp",
+        "host": "jpgw4.cityroam.jp",
         "port": 2083
     },
     "kwikboost.com": {
@@ -210,7 +210,7 @@
         "note": "No NAPTR or SRV record found and no fallback available"
     },
     "w-jp1.wi2.cityroam.jp": {
-        "host": "jpgw.cityroam.jp",
+        "host": "jpgw4.cityroam.jp",
         "port": 2083
     },
     "wayru.io": {
@@ -218,7 +218,7 @@
         "port": 2083
     },
     "jwa.bemap.cityroam.jp": {
-        "host": "jpgw.cityroam.jp",
+        "host": "jpgw4.cityroam.jp",
         "port": 2083
     },
     "or1.guglielmo.biz": {
@@ -250,5 +250,66 @@
     "securewifi.purple.ai": {
         "host": "rad1-secure.purple.ai",
         "port": 2084
+    },
+    "cisco.com": {
+        "host": null,
+        "port": null,
+        "note": "No NAPTR or SRV record found and no fallback available"
+    },
+    "com.firabarcelona.construmat": {
+        "host": null,
+        "port": null,
+        "note": "No NAPTR or SRV record found and no fallback available"
+    },
+    "com.firabarcelona.iot": {
+        "host": null,
+        "port": null,
+        "note": "No NAPTR or SRV record found and no fallback available"
+    },
+    "com.firabarcelona.smartcity": {
+        "host": null,
+        "port": null,
+        "note": "No NAPTR or SRV record found and no fallback available"
+    },
+    "davidlloyd.openroaming.net": {
+        "host": "idpeu.openroaming.net",
+        "port": 2083
+    },
+    "eu-sdk.openroaming.net": {
+        "host": "idpeu.openroaming.net",
+        "port": 2083
+    },
+    "firabarcelona.padelsummit.com": {
+        "host": null,
+        "port": null,
+        "note": "No NAPTR or SRV record found and no fallback available"
+    },
+    "firabarcelona.smartcity.com": {
+        "host": null,
+        "port": null,
+        "note": "No NAPTR or SRV record found and no fallback available"
+    },
+    "idp.openroamingconnect.org": {
+        "host": "idp.openroamingconnect.org",
+        "port": 2083
+    },
+    "telcombas.com": {
+        "host": null,
+        "port": null,
+        "note": "No NAPTR or SRV record found and no fallback available"
+    },
+    "tetrapi.pt": {
+        "host": "idp.openroaming.tetrapi.pt",
+        "port": 2083
+    },
+    "tonybox.net": {
+        "host": null,
+        "port": null,
+        "note": "No NAPTR or SRV record found and no fallback available"
+    },
+    "web.de": {
+        "host": null,
+        "port": null,
+        "note": "No NAPTR or SRV record found and no fallback available"
     }
 }
