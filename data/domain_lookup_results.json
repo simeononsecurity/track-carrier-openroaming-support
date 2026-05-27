@@ -250,7 +250,7 @@
         "port": 2084
     },
     "securewifi.purple.ai": {
-        "host": "rad1-secure.purple.ai",
+        "host": "rad2-secure.purple.ai",
         "port": 2084
     },
     "cisco.com": {

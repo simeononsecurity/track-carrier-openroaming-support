@@ -55,7 +55,7 @@ A few realms we've identified from public certificates, public documentation, an
 | profile.guglielmo.biz      | openroaming.guglielmo.biz  |   2083 |
 | samsung.openroaming.net    | idp.openroaming.net        |   2083 |
 | sdk.openroaming.net        | idp.openroaming.net        |   2083 |
-| securewifi.purple.ai       | rad1-secure.purple.ai      |   2084 |
+| securewifi.purple.ai       | rad2-secure.purple.ai      |   2084 |
 | test.orportal.org          | test.orportal.org          |   2083 |
 | tetrapi.pt                 | idp.openroaming.tetrapi.pt |   2083 |
 | tokyo.wi2.cityroam.jp      | jpgw4.cityroam.jp          |   2083 |
