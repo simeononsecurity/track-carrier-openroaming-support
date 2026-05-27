@@ -20,8 +20,9 @@
         "note": "No NAPTR or SRV record found and no fallback available"
     },
     "wlan.mnc460.mcc313.pub.3gppnetwork.org": {
-        "host": "openroaming-proxy-1.mobi.com",
-        "port": 2083
+        "host": null,
+        "port": null,
+        "note": "No NAPTR or SRV record found and no fallback available"
     },
     "samsung.openroaming.net": {
         "host": "idp.openroaming.net",
@@ -214,8 +215,9 @@
         "port": 2083
     },
     "wayru.io": {
-        "host": "radsec.wayru.io",
-        "port": 2083
+        "host": null,
+        "port": null,
+        "note": "No NAPTR or SRV record found and no fallback available"
     },
     "jwa.bemap.cityroam.jp": {
         "host": "jpgw4.cityroam.jp",

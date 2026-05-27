@@ -182,16 +182,30 @@ def get_all_active_mcc_mnc():
     Update the database, load existing data, and check realm existence
     for each MCC-MNC combination with a progress indicator, updating only new or changed data.
     """
-    # Update the local database to ensure we have the latest data
-    update()
-
-    # Paths to JSON files
-    original_json_path = get_mccmnc_json_path()
     current_dir = os.path.dirname(os.path.abspath(__file__))
     local_json_path = os.path.join(current_dir, 'data', 'mccmnc.json')
 
-    # Load data from the original and local JSON files
-    original_data = load_json_file(original_json_path)
+    # Attempt to update the local database; fall back to existing data/mccmnc.json on failure
+    try:
+        update()
+        original_json_path = get_mccmnc_json_path()
+        original_data = load_json_file(original_json_path)
+        if not original_data:
+            raise ValueError("mccmnc package returned empty data after update()")
+        print(f"Loaded {len(original_data)} entries from mccmnc package.")
+    except (SystemExit, Exception) as e:
+        print(f"Warning: mccmnc.update() failed ({e}). Falling back to local data/mccmnc.json.")
+        original_data = load_json_file(local_json_path)
+        if not original_data:
+            print("Error: No MCC-MNC data available. Exiting.")
+            return
+        # Strip any previous lookup results so we re-process cleanly
+        original_data = {k: {fk: fv for fk, fv in v.items()
+                              if fk in ('MCC', 'MNC', 'ISO', 'COUNTRY', 'CC', 'NETWORK')}
+                         for k, v in original_data.items()}
+        print(f"Loaded {len(original_data)} entries from local data/mccmnc.json fallback.")
+
+    # Load existing local results (to preserve any prior lookup data)
     local_data = load_json_file(local_json_path)
 
     # Setup DNS resolvers with specified DNS servers

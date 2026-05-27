@@ -26,6 +26,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Patch mccmnc package (mcc-mnc.com is now a SPA; patch update() to parse JS bundle)
+        run: python patch_mccmnc.py
+
       - name: Run main.py
         run: python main.py
         continue-on-error: true
